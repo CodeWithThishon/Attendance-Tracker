@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #000;
+    color: white;
+}
+
+/* Navbar */
+.navbar {
+    background: #111;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h2 {
+    margin: 0;
+    font-size: 22px;
+}
+
+/* Logout Button */
+.logout-btn {
+    background: red;
+    border: none;
+    padding: 10px 18px;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+/* Class Info */
+.class-info {
+    text-align: center;
+    margin: 25px 0;
+    font-size: 18px;
+    color: #ccc;
+}
+
+/* Dashboard Grid */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    padding: 40px;
+}
+
+/* Dashboard Buttons */
+.dash-btn {
+    height: 120px;
+    font-size: 18px;
+    border: none;
+    border-radius: 12px;
+    background: #1a1a1a;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 0 8px #333;
+}
+
+/* Disabled Buttons */
+.dash-btn:disabled {
+    background: #222;
+    color: #777;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+/* Hover Effect */
+.dash-btn:hover:not(:disabled) {
+    background: #333;
+    transform: scale(1.05);
+}
+
+/* 📱 Mobile */
+@media (max-width: 600px) {
+
+    .navbar h2 {
+        font-size: 18px;
+    }
+
+    .dash-btn {
+        height: 90px;
+        font-size: 16px;
+    }
+
+    .dashboard-grid {
+        padding: 20px;
+        gap: 15px;
+    }
+}

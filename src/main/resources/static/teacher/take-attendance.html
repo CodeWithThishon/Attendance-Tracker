@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Take Attendance</title>
+  <link rel="stylesheet" href="take-attendance.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+  <h2>Take Attendance</h2>
+  <button class="back-btn" onclick="goBack()">⬅ Back</button>
+</div>
+
+<!-- Date -->
+<div class="date-box">
+  <label>Select Date:</label>
+  <input type="date" id="attendanceDate">
+</div>
+
+<!-- Student List -->
+<div class="container">
+  <table>
+    <thead>
+    <tr>
+      <th>Roll No</th>
+      <th>Name</th>
+      <th>Status</th>
+    </tr>
+    </thead>
+    <tbody id="studentsTable"></tbody>
+  </table>
+
+  <button class="submit-btn" onclick="submitAttendance()">
+    ✅ Submit Attendance
+  </button>
+</div>
+
+<script src="take-attendance.js"></script>
+</body>
+</html>

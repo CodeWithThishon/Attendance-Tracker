@@ -1,0 +1,11 @@
+package com.attendance.tracker.Repository;
+
+
+import com.attendance.tracker.Entity.SchoolClass;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface SchoolClassRepository extends JpaRepository<SchoolClass,Long> {
+    boolean existsByClassName(String className);
+}

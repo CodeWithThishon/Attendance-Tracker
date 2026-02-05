@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #000;
+    color: white;
+}
+
+/* Navbar */
+.navbar {
+    background: #111;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logout */
+.logout-btn {
+    background: red;
+    border: none;
+    padding: 10px 18px;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+/* Dashboard Grid */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    padding: 40px;
+}
+
+/* Buttons */
+.dash-btn {
+    height: 120px;
+    font-size: 18px;
+    border: none;
+    border-radius: 12px;
+    background: #1a1a1a;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 0 8px #333;
+}
+
+/* Hover Effect */
+.dash-btn:hover {
+    background: #333;
+    transform: scale(1.05);
+}
+
+/* 📱 Mobile Adjustments */
+@media (max-width: 600px) {
+
+    .navbar h2 {
+        font-size: 18px;
+    }
+
+    .dash-btn {
+        height: 90px;
+        font-size: 16px;
+    }
+
+    .dashboard-grid {
+        padding: 20px;
+        gap: 15px;
+    }
+}

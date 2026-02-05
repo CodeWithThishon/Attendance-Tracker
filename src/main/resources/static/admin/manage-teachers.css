@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.card {
+    background: #111;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px rgba(255,255,255,0.05);
+}
+
+.card h2 {
+    margin-bottom: 15px;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    background: #000;
+    border: 1px solid #333;
+    color: #fff;
+    border-radius: 8px;
+}
+
+button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.card button {
+    background: #fff;
+    color: #000;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #333;
+}
+
+th {
+    background: #000;
+}
+
+.actions button {
+    margin-right: 8px;
+}
+
+.actions .delete {
+    background: crimson;
+    color: white;
+}
+
+.actions .edit {
+    background: dodgerblue;
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    tr {
+        margin-bottom: 15px;
+    }
+
+    td {
+        border: none;
+        padding: 10px 0;
+    }
+}

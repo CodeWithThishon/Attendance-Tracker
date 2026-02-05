@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #000;
+    color: white;
+}
+
+/* Navbar */
+.navbar {
+    background: #111;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.back-btn {
+    background: #444;
+    border: none;
+    padding: 8px 14px;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+/* Date */
+.date-box {
+    padding: 20px 40px;
+}
+
+input[type="date"] {
+    padding: 6px;
+    border-radius: 4px;
+}
+
+/* Table */
+.container {
+    padding: 20px 40px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #111;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #333;
+}
+
+th {
+    background: #222;
+}
+
+/* Buttons */
+.present {
+    background: green;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.absent {
+    background: red;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.submit-btn {
+    margin-top: 25px;
+    padding: 12px 25px;
+    background: #1e90ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}

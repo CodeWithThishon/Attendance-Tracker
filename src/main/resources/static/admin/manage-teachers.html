@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manage Teachers</title>
+    <link rel="stylesheet" href="manage-teachers.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Manage Teachers</h1>
+
+    <!-- Add Teacher -->
+    <div class="card">
+        <h2>Add Teacher</h2>
+
+        <input type="text" id="name" placeholder="Teacher Name">
+        <input type="email" id="email" placeholder="Email">
+        <input type="password" id="password" placeholder="Password">
+
+        <select id="classSelect">
+            <option value="">--- Assign Class ---</option>
+        </select>
+
+        <button onclick="addTeacher()">Add Teacher</button>
+    </div>
+
+    <!-- Teachers List -->
+    <div class="card">
+        <h2>Teachers List</h2>
+
+        <table>
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Assigned Class</th>
+                <th>Actions</th>
+            </tr>
+            </thead>
+            <tbody id="teachersTable"></tbody>
+        </table>
+    </div>
+</div>
+
+<script src="manage-teachers.js"></script>
+</body>
+</html>

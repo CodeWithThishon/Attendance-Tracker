@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Student</title>
+    <link rel="stylesheet" href="edit-student.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Edit Student</h1>
+
+    <div class="card">
+        <input type="text" id="studentName" placeholder="Student Name">
+        <input type="text" id="rollNo" placeholder="Roll Number">
+
+        <select id="classSelect">
+            <option value="">-- Select Class --</option>
+        </select>
+
+        <div class="actions">
+            <button onclick="updateStudent()">Update</button>
+            <button class="cancel" onclick="goBack()">Cancel</button>
+        </div>
+    </div>
+</div>
+
+<script src="edit-student.js"></script>
+</body>
+</html>

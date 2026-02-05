@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="admin.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<div class="navbar">
+  <h2>Admin Dashboard</h2>
+  <button class="logout-btn" onclick="logout()">Logout</button>
+</div>
+
+<div class="dashboard-grid">
+
+  <button class="dash-btn"onclick="window.location.href='manage-classes.html'">
+    Manage Classes</button>
+  <button class="dash-btn"onclick="window.location.href='manage-teachers.html'">
+    Manage Teachers</button>
+  <button class="dash-btn" onclick="window.location.href='manage-students.html'">
+    Manage Students</button>
+
+</div>
+
+
+<script src="admin.js"></script>
+</body>
+</html>

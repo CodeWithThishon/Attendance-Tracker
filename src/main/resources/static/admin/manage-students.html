@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Manage Students</title>
+  <link rel="stylesheet" href="manage-students.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Manage Students</h1>
+
+  <!-- ➕ Add Student -->
+  <div class="card">
+    <h2>Add Student</h2>
+
+    <input type="text" id="studentName" placeholder="Student Name">
+    <input type="text" id="rollNo" placeholder="Roll Number">
+
+    <select id="classSelect">
+      <option value="">-- Select Class --</option>
+    </select>
+
+    <button onclick="addStudent()">Add Student</button>
+  </div>
+
+  <!-- 🔍 Filters -->
+  <div class="filters">
+    <input type="text" id="searchInput" placeholder="Search name / roll no">
+    <select id="classFilter">
+      <option value="">All Classes</option>
+    </select>
+    <button onclick="loadStudents(0)">Search</button>
+  </div>
+
+  <!-- 📋 Students Table -->
+  <table>
+    <thead>
+    <tr>
+      <th>Name</th>
+      <th>Roll No</th>
+      <th>Class</th>
+      <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody id="studentsTable"></tbody>
+  </table>
+
+  <!-- 📄 Pagination -->
+  <div class="pagination">
+    <button onclick="prevPage()">⬅ Prev</button>
+    <span id="pageInfo"></span>
+    <button onclick="nextPage()">Next ➡</button>
+  </div>
+</div>
+
+<script src="manage-students.js"></script>
+</body>
+</html>

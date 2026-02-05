@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Teacher Dashboard</title>
+  <link rel="stylesheet" href="teacher.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+  <h2>Teacher Dashboard</h2>
+  <button class="logout-btn" onclick="logout()">Logout</button>
+</div>
+
+<!-- Info -->
+<div class="info">
+  <h3 id="classInfo">Loading class info...</h3>
+</div>
+
+<!-- Dashboard Buttons -->
+<div class="dashboard-grid">
+
+  <button class="dash-btn"
+          id="attendanceBtn"
+          onclick="goTakeAttendance()"
+          disabled>
+    📋 Take Attendance
+  </button>
+
+  <button class="dash-btn"
+          id="percentageBtn"
+          onclick="goPercentage()"
+          disabled>
+    📊 Attendance Percentage
+  </button>
+
+</div>
+
+<script src="teacher.js"></script>
+</body>
+</html>

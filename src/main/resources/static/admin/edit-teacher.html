@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Teacher</title>
+    <link rel="stylesheet" href="edit-teacher.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Edit Teacher</h1>
+
+    <div class="card">
+        <input type="text" id="name" placeholder="Teacher Name">
+        <input type="email" id="email" placeholder="Email">
+        <input type="password" id="password" placeholder="New Password (optional)">
+
+        <select id="classSelect">
+            <option value="">--- Unassign Class ---</option>
+        </select>
+
+        <div class="actions">
+            <button onclick="updateTeacher()">Update</button>
+            <button class="back" onclick="goBack()">Back</button>
+        </div>
+    </div>
+</div>
+
+<script src="edit-teacher.js"></script>
+</body>
+</html>

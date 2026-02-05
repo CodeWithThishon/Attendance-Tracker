@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manage Classes</title>
+    <link rel="stylesheet" href="manage-classes.css">
+</head>
+<body>
+
+<header>
+    <h2>Manage Classes</h2>
+    <button onclick="goBack()">⬅ Dashboard</button>
+</header>
+
+<div class="container">
+
+    <!-- Add class -->
+    <div class="form-box">
+        <input type="text" id="className" placeholder="Enter Class Name">
+        <button onclick="addClass()">Add Class</button>
+    </div>
+
+    <!-- Classes table -->
+    <table>
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Class Name</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody id="classTable"></tbody>
+    </table>
+
+</div>
+
+<script src="manage-classes.js"></script>
+</body>
+</html>

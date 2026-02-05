@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Attendance Percentage</title>
+    <link rel="stylesheet" href="attendance-percentage.css">
+</head>
+<body>
+
+<div class="navbar">
+    <h2>Attendance Percentage</h2>
+    <button class="back-btn" onclick="goBack()">⬅ Dashboard</button>
+</div>
+
+<div class="filter-box">
+    <select id="year"></select>
+    <select id="month"></select>
+    <button onclick="loadPercentage()">View</button>
+</div>
+
+<div class="container">
+    <table>
+        <thead>
+        <tr>
+            <th>Roll No</th>
+            <th>Name</th>
+            <th>Monthly %</th>
+            <th>Total %</th>
+        </tr>
+        </thead>
+        <tbody id="percentageTable"></tbody>
+    </table>
+</div>
+
+<script src="attendance-percentage.js"></script>
+</body>
+</html>
